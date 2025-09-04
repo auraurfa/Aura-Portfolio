@@ -1,0 +1,66 @@
+/* Hero */
+.hero {
+  background-image: url('assets/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh; /* biar full layar */
+  color: white;
+  padding: 120px 0; /* lebih modern daripada % */
+}
+
+/* Navbar */
+.navbar-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-blur .nav-link,
+.navbar-blur .navbar-brand {
+  color: #fff !important;
+}
+
+/* Card */
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+}
+.footer a {
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #ffc107; 
+}
+
+#project .card-img-top {
+  height: 400px;      
+  object-fit: cover;   
+}
+
+.profile-img {
+  height: 400px;         
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+#profile {
+  background-color: #f2f2f2;
+}
